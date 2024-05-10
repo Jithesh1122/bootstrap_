@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT 650</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiXifCd5ICGAxVHp2YCHYqUBXAYABAAGgJzbQ&ase=2&gclid=Cj0KCQjw6PGxBhCVARIsAIumnWalN24JH4VbRlZCf250PP63lqNACnuP3BvG7iVBbroh5YfBWyRJv-UaAkeXEALw_wcB&ohost=www.google.com&cid=CAESVuD2i4Ifo0RPv6_5fBy3JLvdHzsSTSF_3spMtkG-wXkSjZgDoqMD-A9GgmwBsccPNKe-chhDYMHiLO3VmZDx1RFfaaNV-tIld5x26hIaYZVF7KV-pH9E&sig=AOD64_0lvtIv6lvVCEmjliNVGOAsTkjsWA&q&nis=4&adurl&ved=2ahUKEwjG0Oqd5ICGAxUncGwGHYzeClcQ0Qx6BAgGEAE">
+            <img src="data:image/png;base64,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"
+                alt="GT650 Logo" width="100" height="100" class="mr-2">
+               Royal Enfield Continental GT 650</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#headingOne" onclick="expandAccordion('collapseOne')">Specification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#headingTwo" onclick="expandAccordion('collapseTwo')">Perfromance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#headingThree" onclick="expandAccordion('collapseThree')">Weight</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#headingFour" onclick="expandAccordion('collapseFour')">Clutch</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/continental-gt/banner/new/desktop/engine.jpg"
+                    class="d-block w-100" alt="VisionGT1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/continental-gt/banner/new/desktop/ton-of-fun.jpg"
+                    class="d-block w-100" alt="VisionGT2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/continental-gt/banner/new/desktop/blacked-out.jpg"
+                    class="d-block w-100" alt="VisionGT3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Accordion -->
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <span style="font-weight: 700;">SPECIFICATION</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Engine: It features a 648cc, air-cooled, SOHC, fuel-injected parallel-twin engine.<br>
+Power: This engine generates around 47 horsepower (35 kW) at 7250 rpm.<br>
+Torque: The torque output is approximately 52 Nm at 5250 rpm.<br>
+Transmission: It comes with a 6-speed gearbox, offering smooth shifts and flexibility across various riding conditions.<br>
+Cooling: The engine employs air cooling, which is a traditional method but efficient for this bike's purpose.<br>
+Fueling: It's equipped with fuel injection, providing better fuel efficiency and throttle response compared to carbureted systems<br>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <span style="font-weight: 700;">PERFORMANCE</span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <strong>Acceleration:</strong> The GT 650 offers brisk acceleration, especially in the mid-range, thanks to its torquey parallel-twin engine. It can reach highway speeds swiftly and comfortably.<br>
+<strong>Handling:</strong> With its café racer-inspired design and sporty ergonomics, the GT 650 handles well through corners and urban environments. The chassis provides a stable platform for confident riding, while the suspension setup offers a balance between comfort and sportiness.<br>
+<strong>Braking:</strong> Equipped with disc brakes at both ends and possibly with ABS (depending on the model and region), the GT 650 offers reliable stopping power. The brakes provide progressive feedback, enhancing rider confidence<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <span style="font-weight: 700;">WEIGHT</span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    The curb weight (including all fluids and a full fuel tank) of the GT 650 typically falls in the range of 198 kg to 202 kg (approximately 436 lbs to 445 lbs).<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <span style="font-weight: 700;">CLUTCH</span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    The GT 650 comes with a wet, multi-plate clutch system, which is durable and provides smooth engagement. It offers a light clutch pull, making it easy to operate in stop-and-go traffic or during spirited riding<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="card-deck">
+        
+
+            
+        <div class="card bg-white">
+            <a href="https://www.royalenfield.com/in/en/motorcycles/continental-gt/">
+                <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/continental-gt/banner/new/gallery/gallery-10.jpg"
+                    class="card-img-top" alt="SF90XX">
+            </a>
+
+            <div class="card-body">
+                <h5 class="card-title">Standard Continental GT 650</h5>
+                <p class="card-text"> This is the base model of the Continental GT 650 lineup. It typically comes with standard features and finishes, providing the core GT 650 experience without additional frills or accessories. This version offers the classic café racer style and performance that the GT 650 is known for..</p>
+            </div>
+        </div>
+        <div class="card bg-danger">
+            <a href="https://www.royalenfield.com/in/en/motorcycles/continental-gt/">
+                <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/continental-gt/banner/new/gallery/gallery-7.jpg"
+                    class="card-img-top" alt="DAYTONA">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Custom or Special Editions</h5>
+                <p class="card-text">Occasionally, Royal Enfield releases special edition versions of the GT 650. These custom or special editions may feature unique paint schemes, graphics, and sometimes additional accessories. These editions often cater to enthusiasts looking for a more customized or distinctive appearance.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <br>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary animated-button" id="websiteButton">Official Royal Enfield
+            Website</button>
+
+    </div>
+
+    <!-- Bootstrap JS and jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function expandAccordion(panelId) {
+            setTimeout(function () {
+                $('#' + panelId).collapse('show');
+            }, 500); 
+        }
+    </script>
+    
+</body>
+
+</html>
